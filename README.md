@@ -1,4 +1,4 @@
-# Flask & Babel & SCSS & SSR
+# FlaskSSR
 - prebuild process
  - js -> babel -> minify
  - scss -> css -> minfiy 
