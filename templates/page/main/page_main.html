@@ -1,0 +1,28 @@
+{% extends 'layout/layout_page.html' %}
+
+{% block stylesheet %}
+    <!-- main.scss -->
+    {% assets "page_main.scss" %}
+        <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+    {% endassets %}
+{% endblock stylesheet %}
+
+
+{% block head %}
+
+{% endblock head %}
+
+
+{% block body %}
+    <div>
+        hello main pager {{ "10000.0"|comma }}
+    </div>
+{% endblock body %}
+
+
+{% block javascript %}
+    <!-- page_min.js -->
+    {% assets "page_main.js" %}
+        <script type="module" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock javascript %}
